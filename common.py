@@ -13,8 +13,9 @@ from pypdf import PdfReader
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-import dotenv
-dotenv.load_dotenv()
+# import dotenv
+# dotenv.load_dotenv()
+api_key = os.environ.get("OPENAI_API_KEY", "")
 
 # OpenAI v1 クライアント
 try:
